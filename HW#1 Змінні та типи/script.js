@@ -42,11 +42,11 @@ console.log('Випадкова знижка:', sell);
 
 let sellToFixed = +sell.toFixed(2);
 
-let sellPrice = banana - ((banana * sellToFixed) / 100); 
+let sellPrice = summ - ((summ * sellToFixed) / 100); 
 
-console.log('Ціна товару зі знижкої:', +sellPrice.toFixed(2));
+console.log('Вартість товару зі знижкої:', +sellPrice.toFixed(2));
 
-let profit =  (banana / 2) - ((banana * sellToFixed) /100)  
+let profit =  (summ / 2) - ((summ * sellToFixed) /100)  
 
 console.log('Чистий прибуток:', +profit.toFixed(2));
 
@@ -60,6 +60,6 @@ document.writeln(
      7.Решта при оплаті товару (500 грн.): ${restFrom500}<br>
      8.Середня ціна товару: ${avarage}<br>
      9.Випадкова знижка: ${sell}<br>
-     10.Ціна товару зі знижкої: ${sellPrice.toFixed(2)}<br>
+     10.Вартість товару зі знижкої: ${sellPrice.toFixed(2)}<br>
      11.Чистий прибуток: ${+profit.toFixed(2)}`
      )
