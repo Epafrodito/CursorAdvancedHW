@@ -38,7 +38,7 @@ console.log('Середня ціна товару:', avarage);
 
 let  sell = Math.random() * 100;
 
-console.log('Випадкова знижка:', sell);
+console.log('Випадкова знижка:', Math.floor(sell));
 
 let sellToFixed = +sell.toFixed(2);
 
@@ -59,7 +59,7 @@ document.writeln(
      6.Сума товару парна: ${even}<br>
      7.Решта при оплаті товару (500 грн.): ${restFrom500}<br>
      8.Середня ціна товару: ${avarage}<br>
-     9.Випадкова знижка: ${sell}<br>
+     9.Випадкова знижка: ${Math.floor(sell)}<br>
      10.Вартість товару зі знижкої: ${sellPrice.toFixed(2)}<br>
      11.Чистий прибуток: ${+profit.toFixed(2)}`
      )
