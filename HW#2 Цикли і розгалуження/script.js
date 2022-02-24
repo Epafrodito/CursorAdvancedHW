@@ -1,12 +1,12 @@
 let numberFromUserN = +prompt('Введіть ціле значення N');
-while (!Number.isInteger(numberFromUserN)) {
+while (!Number.isInteger(numberFromUserN) || !numberFromUserN) {
     numberFromUserN = +prompt('Введіть ціле значення N');
 }
 
 console.log(numberFromUserN);
 
 let numberFromUserM = +prompt('Введіть ціле значення M');
-while (!Number.isInteger(numberFromUserM) || (numberFromUserM < numberFromUserN)) {
+while (!Number.isInteger(numberFromUserM) || (numberFromUserM < numberFromUserN) || !numberFromUserM) {
     numberFromUserM = +prompt('Введіть ціле значення M');
 }
 
