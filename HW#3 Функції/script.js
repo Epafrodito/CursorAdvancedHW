@@ -124,13 +124,15 @@ fun6.onclick = showCountLetter;
 
 //Функція №7
 function convertCurrency() {
-  let currency = prompt("Вкажіть суму та валюту:", "150$");
+  let currencyCase = prompt("Вкажіть суму та валюту:", "150$");
   let exchangeRate = 33;
+  let currency = currencyCase.toLowerCase();
+
   if (currency.indexOf("$") !== -1) {
-    let currencyDoll = currency.slice(0, -1) * exchangeRate + " uah";
+    let currencyDoll = (currency.slice(0, -1) * exchangeRate).toFixed(2) + " uah";
     alert(currencyDoll);
   } else if (currency.indexOf("uah") !== -1) {
-    let currencyUah = currency.slice(0, -3) / exchangeRate + " $";
+    let currencyUah = (currency.slice(0, -3) / exchangeRate).toFixed(2) + " $";
     alert(currencyUah);
   } else {
     alert("Помилка! Невідома валюта!");
@@ -141,16 +143,17 @@ fun7.onclick = convertCurrency;
 
 //Функція №8
 function showRandomPassword(){
-  let number = prompt("Введіть кількість символів", "8");
+  
+  let number = prompt("Введіть кількість символів", "10") || undefined;
   let result = getRandomPassword(number);
   alert(result)
 }
 
-function getRandomPassword(number) {
+function getRandomPassword(number = 8) {
   let randomPassword = Math.floor(
     Math.pow(10, number - 1) + Math.random() * 9 * Math.pow(10, number - 1)
   );
-
+  
   return randomPassword;
 }
 
