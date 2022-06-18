@@ -36,7 +36,7 @@ function getSubjects(studentObj) {
   return subjects;
 }
 
-console.log(getSubjects(students[0]));
+console.log('Список предметів:', getSubjects(students[0]));
 
 function capitalizeFirstLetter(str) {
   return str[0].toUpperCase() + str.slice(1);
@@ -53,7 +53,7 @@ function getAverageMark(studentObj) {
 
   return avarage;
 }
-console.log(getAverageMark(students[0]));
+console.log('Середня оцінка:', getAverageMark(students[0]));
 
 //Function #3
 
@@ -67,7 +67,7 @@ function getStudentInfo(studentObj) {
   return info;
 }
 
-console.log(getStudentInfo(students[0]));
+console.log('Інформація про студента:', getStudentInfo(students[0]));
 
 // Function #4
 
@@ -77,7 +77,7 @@ function getStudentsNames(students) {
   return nameStudents;
 }
 
-console.log(getStudentsNames(students));
+console.log('Імена студентів в алфавітному порядку:', getStudentsNames(students));
 
 // Function #5
 
@@ -91,7 +91,7 @@ function getBestStudent(students) {
   return result[0];
 }
 
-console.log(getBestStudent(students));
+console.log("Ім'я кращого студента:", getBestStudent(students));
 
 // Function #6
 function calculateWordLetters(str) {
@@ -104,4 +104,4 @@ function calculateWordLetters(str) {
   return result;
 }
 
-console.log(calculateWordLetters("test"));
+console.log('Кількість букв у слові:', calculateWordLetters("test"));
