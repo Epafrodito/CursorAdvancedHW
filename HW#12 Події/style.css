@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(214, 213, 212);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(./img/img.jpg);
+    background-size: 100%;
+}
+
+.center {
+    width: 60%;
+    text-align: center;
+    font-size: 32px;
+}
+
+.allkeys {
+    font-size: 52px;
+    display: flex;
+    gap: 50px;
+    margin-top: 150px;
+}
+
+.key {
+    text-align: center;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 15px;
+    transition:all .4s ease;
+}
+
+
+
+.goo{
+    background-color: #f0ce12;
+    transform: scale(1.2);
+    }
