@@ -17,8 +17,8 @@ async function getPartFilm() {
   if (part < 1 || part > 6) return alert("Введіть значення від 1 до 6!");
   const res = await fetch(`${urlFilm}${part}`).then((res) => res.json());
   const arrHerous = res.characters;
-  const herousInfo = "";
-  const arr = [];
+  let herousInfo = "";
+  let arr = [];
   arrHerous.forEach((el) => {
     getPerson(el).then((el) => {
       arr = [el.name, el.birth_year, el.gender];
@@ -33,7 +33,7 @@ getInfo.addEventListener("click", getPartFilm);
 
 async function getPlanets() {
   infoSection.innerHTML = "";
-  const planet = "";
+  let planet = "";
   const res = await fetch(urlPlanet).then((res) => res.json());
   const planetsArr = res.results;
   planetsArr.forEach((namePlanet) => {
